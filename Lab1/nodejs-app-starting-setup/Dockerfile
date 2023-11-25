@@ -12,7 +12,7 @@ COPY . /app
 
 # comandos a correr dentro del contenedor
 # CUANDO SE ESTA CREANDO LA IMAGEN
-RUN nmp install
+RUN npm install
 
 EXPOSE 1080
 
