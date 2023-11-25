@@ -1,16 +1,16 @@
 # que imagen vamos a usar?
 FROM node
 
+# indicar el directorio de trabajo
+WORKDIR /app
 
 # comandos a correr dentro del contenedor
 # CUANDO SE ESTA CREANDO LA IMAGEN
 COPY package.json /app
+
 RUN npm install
 
 EXPOSE 1080
-
-# indicar el directorio de trabajo
-WORKDIR /app
 
 # que archivos vamos a copiar? 
 # todos los de este directorio a la carpeta /app
